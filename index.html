@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div id="left">Portfolio</div>
+        <div id="right">
+          <p>Home</p>
+          <p class="blur">About</p>
+          <p class="blur">Contact</p>
+          <p class="blur">Work Together</p>
+        </div>
+      </nav>
+
+      <section id="intro">
+        <h1>Hello i am,</h1>
+        <h2>Waris.</h2>
+      </section>
+
+      <section id="photo">
+        <div id="time">
+          <p class="timing">9:30</p>
+          <div></div>
+          <p>Creative Front End Developer</p>
+        </div>
+        <div id="pic">
+          <img
+            src="https://images.unsplash.com/photo-1618886614638-80e3c103d31a?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </div>
+      </section>
+      <section id="logo">
+        <img id="vscode" src="image/vscode.png" alt="" />
+        <img id="js" src="image/js.png" alt="" />
+        <img id="css" src="image/css.png" alt="" />
+        <img id="htlm" src="image/html.png" alt="" />
+        <h1>[ I design & build experiences ]</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam porro
+          obcaecati cupiditate dolore, facilis explicabo quaerat, vitae! Amet et
+          odit magnam repellendus cumque fugiat velit veritatis iste.
+        </p>
+      </section>
+
+      <section id="begningSec">
+        <div id="upper">
+          <p>2019</p>
+          <div></div>
+          <h5>The Beginning</h5>
+        </div>
+        <div id="lower">
+          <div id="left">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+          </div>
+          <div id="middle">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+          </div>
+          <div id="right">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="begningSec">
+        <div id="upper">
+          <p>2021</p>
+          <div></div>
+          <h5>Escalation</h5>
+        </div>
+        <div id="lower">
+          <div id="left">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+          </div>
+          <div id="middle">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+          </div>
+          <div id="right">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="great">
+        <div>
+          <p>I am great at</p>
+          <img src="image/tech.png" alt="" />
+        </div>
+      </section>
+
+      <section id="Testimonials">
+        <div id="first">
+          <p>Client</p>
+          <div>
+            <h1>Testimonials</h1>
+            <img src="image/arrow.png" alt="" />
+            <h2>works</h2>
+          </div>
+        </div>
+        <div id="image1">
+          <div id="top">
+            <p>Lenis</p>
+            <div>
+              <p>2022</p>
+              <img src="image/arrow.png" alt="" />
+              <p id="lastp">Slovenian</p>
+            </div>
+          </div>
+          <!-- <img src="https://images.unsplash.com/photo-1528968620-57e0257ff360?q=80&w=1536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset=""> -->
+          <video src="video/lenis.mp4" loop muted autoplay></video>
+        </div>
+        <div id="last">
+          <div id="left">
+            <div id="top">
+              <p>Dome</p>
+              <div>
+                <p>2024</p>
+                <img src="image/arrow.png" alt="" />
+                <p id="lastp">Turkey</p>
+              </div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1466442929976-97f336a657be?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div id="right">
+            <div id="top">
+              <p>Replicate</p>
+              <div>
+                <p>2025</p>
+                <img src="image/arrow.png" alt="" />
+                <p id="lastp">USA</p>
+              </div>
+            </div>
+            <video src="video/replicate.mp4" muted autoplay loop></video>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>waris <span>raja</span></p>
+        <div>
+          <p class="dt">17 / 2 / 2025</p>
+          <p class="timing"></p>
+        </div>
+      </footer>
+    </main>
+    <script>
+      function changeTime() {
+        var dt = new Date();
+        var str = "[" + (dt.getHours() % 12) + ":" + dt.getMinutes() + "]";
+        dt.getHours() % 12 > 0 ? (str += " AM") : (str += " PM");
+        document.querySelector(".timing").textContent = str;
+      }
+
+      function changeDateAndTime() {
+        var dt2 = new Date();
+        var str =
+          dt2.getDate() +
+          " / " +
+          (dt2.getMonth() + 1) +
+          " / " +
+          dt2.getFullYear() +
+          "   " +
+          (dt2.getHours() % 12) +
+          ":" +
+          dt2.getMinutes();
+        dt2.getHours() % 12 > 0 ? (str += " AM") : (str += " PM");
+        document.querySelector(".dt").textContent = str;
+      }
+
+      setInterval(function () {
+        changeTime();
+        changeDateAndTime();
+      }, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Helvetica_Now_Display";
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main nav {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 1vw;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+main nav #left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main nav #right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+main nav #right .blur {
+  opacity: 0.6;
+}
+main #intro {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  width: 100%;
+  margin-top: 4vw;
+  height: 30%;
+}
+main #intro h1 {
+  font-size: 1.5vw;
+}
+main #intro h2 {
+  letter-spacing: -0.3vw;
+  margin-top: -2vw;
+  font-size: 12vw;
+}
+main #photo {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: -3vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+main #photo #time {
+  display: flex;
+  font-size: larger;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1vw;
+}
+main #photo #time div {
+  height: 1px;
+  width: 10vw;
+  background-color: black;
+}
+main #photo #pic {
+  margin-top: 1.5vw;
+  width: 100%;
+}
+main #photo #pic img {
+  width: 100%;
+  height: 50vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 10% 10%;
+     object-position: 10% 10%;
+}
+main #logo {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+main #logo h1 {
+  font-size: 3rem;
+}
+main #logo p {
+  margin-top: -0.5vw;
+  font-size: 1.5vw;
+  text-align: center;
+  width: 48vw;
+}
+main #logo #css {
+  top: 25vw;
+  right: 16vw;
+}
+main #logo #vscode {
+  top: 10vw;
+  left: 10vw;
+}
+main #logo #js {
+  top: 26vw;
+  left: 15vw;
+}
+main #logo #htlm {
+  top: 5vw;
+  right: 17vw;
+}
+main #logo img {
+  position: absolute;
+}
+main #begningSec {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 20vw;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+main #begningSec #upper {
+  position: sticky;
+  z-index: 2000;
+  top: 0;
+  width: 100%;
+  height: 9vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+main #begningSec #upper p {
+  font-size: 7vw;
+}
+main #begningSec #upper div {
+  height: 2px;
+  background-color: black;
+  width: 15vw;
+}
+main #begningSec #upper h5 {
+  font-size: 7vw;
+  opacity: 0.5;
+  letter-spacing: -0.3vw;
+  font-weight: 400;
+}
+main #begningSec #lower {
+  margin-top: -7vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+main #begningSec #lower div {
+  flex: 1;
+}
+main #begningSec #lower #left {
+  width: 100%;
+}
+main #begningSec #lower #left #first {
+  height: 30vw;
+  background-color: black;
+  opacity: 0.2;
+}
+main #begningSec #lower #left #second {
+  margin-top: 5vw;
+  height: 25vw;
+  background-color: black;
+  opacity: 0.2;
+}
+main #begningSec #lower #left #third {
+  margin-top: 5vw;
+  height: 35vw;
+  background-color: black;
+  opacity: 0.2;
+}
+main #begningSec #lower #middle {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 20vw;
+}
+main #begningSec #lower #middle #first {
+  height: 30vw;
+  background-color: black;
+  opacity: 0.2;
+}
+main #begningSec #lower #middle #second {
+  margin-top: 5vw;
+  height: 25vw;
+  background-color: black;
+  opacity: 0.2;
+}
+main #begningSec #lower #middle #third {
+  margin-top: 5vw;
+  height: 35vw;
+  background-color: black;
+  opacity: 0.2;
+}
+main #begningSec #lower #right {
+  width: 100%;
+  margin-top: 12vw;
+}
+main #begningSec #lower #right #first {
+  height: 30vw;
+  background-color: black;
+  opacity: 0.2;
+}
+main #begningSec #lower #right #second {
+  margin-top: 5vw;
+  height: 35vw;
+  background-color: black;
+  opacity: 0.2;
+}
+main #begningSec #lower #right #third {
+  margin-top: 5vw;
+  height: 25vw;
+  background-color: black;
+  opacity: 0.2;
+}
+main #great {
+  margin-top: 10vw;
+  width: 100%;
+  height: 100%;
+  background-image: url(image/bgdots.png);
+  background-size: cover;
+}
+main #great div {
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 2vw;
+}
+main #great div p {
+  font-size: 5vw;
+  text-align: center;
+}
+main #great div img {
+  padding: 0 10vw;
+  margin-top: -1vw;
+  width: 100%;
+  height: 100%;
+}
+main #Testimonials {
+  width: 100%;
+}
+main #Testimonials #first {
+  padding: 0 3vw;
+}
+main #Testimonials #first p {
+  font-size: 4vw;
+}
+main #Testimonials #first div {
+  margin-top: -4vw;
+  height: 12vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+main #Testimonials #first div h1 {
+  font-size: 12vw;
+  letter-spacing: -0.4vw;
+}
+main #Testimonials #first div img {
+  width: 20vw;
+  height: 5vw;
+}
+main #Testimonials #first div h2 {
+  letter-spacing: -0.4vw;
+  font-size: 5vw;
+}
+main #Testimonials #image1 {
+  margin-top: 10vw;
+  padding: 0 10vw;
+}
+main #Testimonials #image1 #top p {
+  font-size: 4vw;
+}
+main #Testimonials #image1 #top div {
+  margin-top: -5vw;
+  height: 5vw;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+main #Testimonials #image1 #top div > p {
+  font-size: 2vw;
+  font-weight: 100;
+}
+main #Testimonials #image1 #top div img {
+  width: -moz-fit-content;
+  width: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 2vw;
+}
+main #Testimonials #image1 #top #plast {
+  font-weight: 100;
+  font-size: 2vw;
+}
+main #Testimonials video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 35vw;
+}
+main #Testimonials #last {
+  padding: 0 10vw;
+  width: 100%;
+  display: flex;
+  gap: 2vw;
+}
+main #Testimonials #last #left {
+  margin-top: 10vw;
+  width: 30vw;
+}
+main #Testimonials #last #left #top p {
+  font-size: 4vw;
+}
+main #Testimonials #last #left #top div {
+  margin-top: -5vw;
+  height: 5vw;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+main #Testimonials #last #left #top div > p {
+  font-size: 2vw;
+  font-weight: 100;
+}
+main #Testimonials #last #left #top div img {
+  width: -moz-fit-content;
+  width: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 2vw;
+}
+main #Testimonials #last #left #top div #plast {
+  font-weight: 100;
+  font-size: 2vw;
+}
+main #Testimonials #last #left img {
+  width: 100%;
+  height: 35vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+main #Testimonials #last #right {
+  padding-top: 10vw;
+  margin-top: 10vw;
+  width: 100%;
+}
+main #Testimonials #last #right #top p {
+  font-size: 4vw;
+}
+main #Testimonials #last #right #top div {
+  margin-top: -5vw;
+  height: 5vw;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+main #Testimonials #last #right #top div > p {
+  font-size: 2vw;
+  font-weight: 100;
+}
+main #Testimonials #last #right #top div img {
+  width: -moz-fit-content;
+  width: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 2vw;
+}
+main #Testimonials #last #right #top div #plast {
+  font-weight: 100;
+  font-size: 2vw;
+}
+main #Testimonials #last #right video {
+  padding: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  width: 100%;
+  height: 35vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+main footer {
+  padding: 0 10vw;
+  margin-top: 5vw;
+  height: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+main footer > p {
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  letter-spacing: -0.09vw;
+}
+main footer > p span {
+  opacity: 0.3;
+}/*# sourceMappingURL=style.css.map */

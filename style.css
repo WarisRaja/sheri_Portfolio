@@ -37,6 +37,9 @@ main nav #right {
   align-items: center;
   gap: 4vw;
 }
+main nav #right i {
+  display: none;
+}
 main nav #right .blur {
   opacity: 0.6;
 }
@@ -241,7 +244,7 @@ main #begningSec #lower #right #third {
 main #great {
   margin-top: 10vw;
   width: 100%;
-  height: 100%;
+  height: 50vw;
   background-image: url(image/bgdots.png);
   background-size: cover;
 }
@@ -416,6 +419,7 @@ main footer {
   margin-top: 5vw;
   height: 5vw;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 main footer > p {
@@ -425,4 +429,240 @@ main footer > p {
 }
 main footer > p span {
   opacity: 0.3;
+}
+
+@media (max-width: 1020px) {
+  main {
+    overflow-x: hidden;
+    padding: 0 3vw;
+  }
+  main nav {
+    padding: 0;
+    margin-top: 0;
+    padding-top: 6vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+  }
+  main nav #left {
+    display: block;
+    font-size: 9vw;
+  }
+  main nav #right p {
+    display: block;
+    display: none;
+  }
+  main nav #right i {
+    display: block;
+    font-size: 10vw;
+  }
+  main #intro {
+    padding: 0;
+    width: 100%;
+    margin-top: 20vw;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main #intro h1 {
+    font-size: 10vw;
+  }
+  main #intro h2 {
+    margin-top: -10vw;
+    margin-left: 5vw;
+    letter-spacing: -1.5vw;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 25vw;
+  }
+  main #photo {
+    padding: 0;
+    margin-top: -8vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    background-color: antiquewhite;
+  }
+  main #photo #time {
+    display: none;
+  }
+  main #photo #pic {
+    margin-top: 0;
+    width: 100%;
+  }
+  main #photo #pic img {
+    width: 100%;
+  }
+  main #logo {
+    padding: 0;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main #logo h1 {
+    font-size: 6.5vw;
+  }
+  main #logo p {
+    margin-top: -0.5vw;
+    font-size: 5vw;
+    text-align: center;
+    width: 80vw;
+  }
+  main #logo #css {
+    top: 65vw;
+    right: 16vw;
+  }
+  main #logo #vscode {
+    top: 65vw;
+    left: 10vw;
+  }
+  main #logo #js {
+    top: 65vw;
+    left: 35vw;
+  }
+  main #logo #htlm {
+    top: 65vw;
+    right: 30vw;
+  }
+  main #logo img {
+    height: 10vw;
+    position: absolute;
+  }
+  main #begningSec {
+    padding: 0 0;
+  }
+  main #great {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main #great div {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0 0;
+  }
+  main #great div p {
+    font-size: 12vw;
+    letter-spacing: -0.1vw;
+    font-style: italic;
+    text-align: center;
+    font-weight: 300;
+  }
+  main #great div img {
+    padding: 0 2vw;
+    margin-top: -10vw;
+  }
+  main #Testimonials {
+    width: 100%;
+    margin-top: 20vw;
+  }
+  main #Testimonials #first {
+    padding: 0 0;
+  }
+  main #Testimonials #first p {
+    font-size: 6vw;
+  }
+  main #Testimonials #first div h1 {
+    font-size: 10vw;
+  }
+  main #Testimonials #image1 {
+    margin-top: 10vw;
+    padding: 0;
+  }
+  main #Testimonials #image1 #top p {
+    font-size: 8vw;
+  }
+  main #Testimonials #image1 #top div {
+    margin-top: -8vw;
+    height: 5vw;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+  main #Testimonials #image1 #top div > p {
+    font-size: 5vw;
+    font-weight: 100;
+  }
+  main #Testimonials #image1 #top #plast {
+    font-weight: 100;
+    font-size: 5vw;
+  }
+  main #Testimonials video {
+    margin-top: 2vw;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main #Testimonials #last {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0vw;
+  }
+  main #Testimonials #last #left {
+    margin-top: 10vw;
+    width: 100%;
+  }
+  main #Testimonials #last #left #top p {
+    font-size: 10vw;
+  }
+  main #Testimonials #last #left #top div {
+    margin-top: -10vw;
+  }
+  main #Testimonials #last #left #top div > p {
+    font-size: 5vw;
+    font-weight: 100;
+  }
+  main #Testimonials #last #left img {
+    margin-top: 2vw;
+    width: 100%;
+    height: 100vw;
+  }
+  main #Testimonials #last #right {
+    padding-top: 0vw;
+    margin-top: 10vw;
+    width: 100%;
+  }
+  main #Testimonials #last #right #top p {
+    font-size: 9vw;
+  }
+  main #Testimonials #last #right #top div {
+    margin-top: -10vw;
+    height: 10vw;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 2vw;
+  }
+  main #Testimonials #last #right #top div > p {
+    font-size: 6vw;
+  }
+  main #Testimonials #last #right #top div img {
+    width: 13vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 2vw;
+  }
+  main #Testimonials #last #right #top div #plast {
+    font-weight: 100;
+    font-size: 2vw;
+  }
+  main #Testimonials #last #right video {
+    padding: 0vw;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main footer {
+    padding: 0 1vw;
+    margin-top: 10vw;
+  }
+  main footer > p {
+    font-size: 5vw;
+  }
+  main footer div {
+    font-size: 2vw;
+  }
 }/*# sourceMappingURL=style.css.map */
